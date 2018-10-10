@@ -9,21 +9,33 @@
     /*display: flex;*/
 
 }
-
+hr{
+    margin: 25px;
+}
 #n1, #n2 {
     padding:auto;
 
     border-radius: 4px;
 }
 
+h1{
+    text-align: center;
+    font-size: 45px;
+}
+*{
+    font-family: Arial;
+}
+
 .input{
+    font-size: 20px;
     margin: 10px;
 }
 
-.resultado{
-    font-size: 24px;
-    background: brown;
-    border: 3px dotted black;
+#resultado{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .button {
@@ -31,4 +43,10 @@
     border-radius: 6px;
     margin: 0 auto;
     width: auto;
+}
+
+#botao{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }

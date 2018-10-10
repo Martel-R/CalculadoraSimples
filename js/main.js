@@ -17,8 +17,11 @@ function dividir() {
 function resultado(result) {
     if (valideNaN(result)) {
         if (!valideFinite(result)){
-            alert('ERROR')
             resulta.textContent = 0
+            alert('ERROR ', n1,' ou ', n2)
+        }
+        else {
+            alert('Resultado é infinito')
         }
     } else {
         resulta.textContent = result
