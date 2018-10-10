@@ -1,0 +1,32 @@
+#div{
+    /*alignment: center;*/
+    padding: auto;
+    border: 1px solid aliceblue;
+    background: aliceblue;
+    margin: 15px auto;
+    width: 500px;
+    /*display: flex;*/
+
+}
+
+#n1, #n2 {
+    padding:auto;
+    border-radius: 4px;
+}
+
+.input{
+    margin: 10px;
+}
+
+.resultado{
+    font-size: 24px;
+    background: brown;
+    border: 3px dotted black;
+}
+
+.button {
+    padding: 10px;
+    border-radius: 6px;
+    margin: 0 auto;
+    width: auto;
+}

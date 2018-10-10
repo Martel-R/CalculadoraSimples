@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <div id="div">
+    <h1>Calculadora</h1>
+        <hr>
+    <div class="input">
+        <label>Número 1:</label><input id="n1" type="text" name="n1" >
+    </div>
+    <div class="input">
+        <label>Número 2:</label><input id="n2" type="text" name="n2">
+    </div>
+        <div id="butao">
+            <button class="button" onclick="somar()">Somar</button>
+            <button class="button"onclick="subtrair()">Subtrair</button>
+            <button class="button"onclick="dividir()">Dividir</button>
+            <button class="button"onclick="multiplicar()">Multiplicar</button>
+        </div>
+        Resultado:<span id="result">0</span>
+    </div>
+</body>
+    <script>
+        var n1 = document.querySelector('#n1')
+        var n2 = document.querySelector('#n2')
+        var resulta = document.querySelector('#result')
+
+        function somar() {
+            return resultado(parseInt(n1.value) + parseInt(n2.value))
+        }
+        function subtrair() {
+            return resultado(parseInt(n1.value) - parseInt(n2.value))
+        }
+        function multiplicar() {
+            return resultado(parseInt(n1.value) * parseInt(n2.value))
+        }
+        function dividir() {
+            resultado(parseInt(n1.value) / parseInt(n2.value))
+        }
+        function resultado(result) {
+            if (valideNaN(result)) {
+                if (!valideFinite(result)){
+                    alert('ERROR')
+                }
+            } else {
+                resulta.textContent = result
+            }
+        }
+        function valideNaN(result) {
+            return isNaN(result)
+        }
+        function valideFinite(result) {
+            return isFinite(result)
+        }
+    </script>
+</html>
