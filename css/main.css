@@ -1,16 +1,18 @@
-#div{
+#quadrado{
     /*alignment: center;*/
     padding: auto;
     border: 1px solid aliceblue;
     background: aliceblue;
     margin: 15px auto;
     width: 500px;
+    height: 500px;
     /*display: flex;*/
 
 }
 
 #n1, #n2 {
     padding:auto;
+
     border-radius: 4px;
 }
 
